@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href=".">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="SANTAL ACADEMY DUMKA">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="SANTAL ACADEMY">
+	<meta property="og:image" content="" />	
+    <title>SANTAL ACADEMY</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/button.css" rel="stylesheet" />
+	
+	<style>
+		#blink {
+			font-size: 20px;
+			font-weight: bold;
+			font-family: sans-serif;
+		}
+	</style>   
+</head>
+
+<body>
+
+ <div class="banner">
+        <img src="assets/banner.jpeg" alt="Santal Academy Banner">
+        <div class="top-left">
+            <span class="title1">Santal</span><span class="title1"> Academy </span> <span class="title2">Dumka</span>
+        </div>
+        <div class="bottom-right">
+           Santal Academy (Estd. 1996) <br> S.K.M. University, Dumka, Jharkhand
+        </div>
+    </div>
+
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a class="current" title="Main Page" href=".">Home</a>
+            </td>
+       
+        <td class="navigation">
+                <a title="About" href="About.html">About</a>
+            </td>
+            
+           <td class="navigation">
+                <a title="Program" href="Program.html">Program</a>
+            </td>
+            
+            <td class="navigation">
+                <a title="Gallery" href="Gallery.html">Gallery</a>
+            </td>
+            <td class="navigation">
+                <a title="Direction" href="Direction.html">Direction</a>
+            </td>
+	    </tr>
+    </table>
+
+
+<h2>Phhoto Gallery</h2>
+
+<table class="sponsors">
+<tr>
+	<td class="sponsor">
+<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides" src="assets/Gallery/1.jpeg" style="width:100%"> 
+  <img class="mySlides" src="assets/Gallery/2.jpeg" style="width:100%"> 
+  <img class="mySlides" src="assets/Gallery/3.jpeg" style="width:100%"> 
+  <img class="mySlides" src="assets/Gallery/4.jpeg" style="width:100%"> 
+</div>
+</td>
+</tr>
+</table>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+        &copy; Academy Organizers
+        &nbsp;|&nbsp; Design by <a href="https://rajeshphy.github.io">Rajesh Kumar</a>
+</footer>
