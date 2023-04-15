@@ -25,6 +25,37 @@
 			font-family: sans-serif;
 		}
 	</style>   
+	<style>
+	.scroll-left {
+	 height: 35px;	
+	 overflow: hidden;
+	 position: relative;
+	 background: #FFFFFF;
+	 color: #2F4F4F;
+	 border: 3px solid C3C3C3;
+	}
+	.scroll-left p {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 margin: 0;
+	 line-height: 25px;
+	 text-align: center;
+	 /* Starting position */
+	 transform:translateX(100%);
+	 /* Apply animation to this element */
+	 animation: scroll-left 15s linear infinite;
+	}
+	/* Move it (define the animation) */
+	@keyframes scroll-left {
+	 0%   {
+	 transform: translateX(100%); 		
+	 }
+	 100% {
+	 transform: translateX(-100%); 
+	 }
+	}
+</style>
 </head>
 
 <body>
@@ -62,7 +93,9 @@
             </td>
 	    </tr>
     </table>
-
+<div class="scroll-left">
+    <p>Upcoming event: <strong>Fundamentals Santali Speaking Course</strong> admission will open soon</p>
+</div>
 <h2>Mission & Vision</h2>
 <p>
 Santal Academy is a Unit of Sido Kanhu Murmu University, Dumka which is
